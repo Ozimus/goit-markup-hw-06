@@ -370,8 +370,13 @@
 </div>
 <div class="sub-box">
   <h3 class="sub-title"> Подпишитесь на рассылку</h3>
-  <input type="text" class="sub-input" />
-  <button class="sub-btn">Подписаться <svg class="sub-icon" width="24" height="24">
+  <input 
+   type="text" 
+   name="user-email"
+   class="sub-input" 
+   placeholder="E-mail"
+    />
+  <button class="sub-btn">Подписаться<svg class="sub-icon" width="24" height="24">
       <use href="./images/icons.svg#icon-sub-icon"></use>
     </svg>
   </button>
@@ -387,6 +392,51 @@
           <use href="./images/icons.svg#icon-modal-close-btn"></use>
         </svg>
       </button>
+      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="modal-form">
+      <div class="modal-block">
+        <label for="user-name" class="modal-label"> Имя</label>
+      <input 
+      type="text" 
+      name="user-name" 
+      class="modal-input"
+       placeholder="Jonn Doe" 
+       required 
+       id="user-name"
+       />
+      </div>
+      <div class="modal-block">
+       <label for="user-name" class="modal-label"> Телефон</label>
+      <input 
+      type="text" 
+      name="user-tel" 
+      class="modal-input" 
+      placeholder="+380" 
+      required 
+      id="user-tel"
+      />
+    </div>
+      <div class="modal-block">
+      <label for="user-name" class="modal-label"> Почта</label>
+      <input 
+      type="text" 
+      name="user-email" 
+      class="modal-input" 
+      placeholder="test@gmail.com" 
+      id="user-email"
+      />
+      </div>
+      <div class="modal-block">
+      <label for="user-comm" class="modal-label"> Комментарий</label>
+     <textarea 
+     name="user-comm"
+     id="user-comm"
+     class="modal-text"
+     placeholder="Введите текст"
+     ></textarea>
+    </div>
+      <button type="submit">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
